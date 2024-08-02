@@ -1,0 +1,114 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  grid-area: sidebar;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-transform: capitalize;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 90%;
+  transform: translate(0, -80px);
+}
+
+.profileAvatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.profile h2 {
+  margin: 10px 0 5px;
+}
+
+.profile p {
+  color: #888;
+  margin: 0;
+}
+
+.socialMedia {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 15px 0;
+}
+
+.socialMediaItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  transition: transform 0.5s ease;
+  position: relative;
+}
+
+.socialMediaItem img {
+  width: 20px;
+  height: 20px;
+}
+
+.contactInfo {
+  width: 100%;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: #f8f8f8;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.iconContainer img {
+  width: 20px;
+  height: 20px;
+}
+
+.contactItemContent {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 35px;
+}
+
+.contactItemContent span:first-child {
+  font-size: 12px;
+  color: #878787;
+}
+
+.btn {
+  background-color: #e96443;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #d9534f;
+}
+
+.upper-case {
+  text-transform: uppercase;
+}

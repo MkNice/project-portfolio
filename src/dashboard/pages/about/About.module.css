@@ -1,0 +1,23 @@
+.line {
+  display: inline-block;
+  width: 15vw;
+  height: 3px;
+  background: linear-gradient(to right, #ff007f, #ff77a9);
+  position: absolute;
+  margin-left: 30px;
+  top: 50%;
+}
+
+.container p {
+  font-size: 0.9em;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.container h2 {
+  display: inline-block;
+  font-size: 2em;
+  margin: 0;
+  position: relative;
+}

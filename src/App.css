@@ -1,0 +1,17 @@
+.app {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-areas:
+    '. . .'
+    '. header header'
+    'sidebar header header'
+    'sidebar content content'
+    'sidebar content content';
+  gap: 2vw;
+  width: 90%;
+  max-width: 1200px;
+  height: 85vh;
+  margin: 60px auto 0;
+  font-family: 'Montserrat', serif;
+  font-style: normal;
+}
