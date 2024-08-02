@@ -1,8 +1,6 @@
 import React from 'react';
 import styles from './Sidebar.module.css';
 import profileAvatar from '../../assets/ava.jpg';
-import facebookIcon from '../../assets/social_media/facebook.svg';
-import instagramIcon from '../../assets/social_media/instagram.svg';
 import linkedinIcon from '../../assets/social_media/linkedin.svg';
 import twitterIcon from '../../assets/social_media/twitter.svg';
 import phoneIcon from '../../assets/personal_info/smartphone.svg';
@@ -20,22 +18,12 @@ const Sidebar = () => {
         <div className={styles.socialMedia}>
           <div className={styles.socialMediaItem}>
             <a href="href">
-              <img src={facebookIcon} alt="Facebook" />
-            </a>
-          </div>
-          <div className={styles.socialMediaItem}>
-            <a href="href">
-              <img src={instagramIcon} alt="Instagram" />
-            </a>
-          </div>
-          <div className={styles.socialMediaItem}>
-            <a href="href">
               <img src={linkedinIcon} alt="LinkedIn" />
             </a>
           </div>
           <div className={styles.socialMediaItem}>
             <a href="href">
-              <img src={twitterIcon} alt="Twitter" />
+              <img src={twitterIcon} alt="GIT" />
             </a>
           </div>
         </div>

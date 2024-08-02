@@ -1,10 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 import profileIcon from '../../assets/navigation/profile.svg';
 import resumeIcon from '../../assets/navigation/resume.svg';
 import portfolioIcon from '../../assets/navigation/portfolio.svg';
-import contantIcon from '../../assets/navigation/contacts.svg'
-
+import contacttIcon from '../../assets/navigation/contacts.svg';
 
 const Header = () => {
   return (
@@ -12,36 +12,36 @@ const Header = () => {
       <nav className={styles.navigationContainer}>
         <ul className={styles.navElements}>
           <li className={styles.navElement}>
-            <a href="href">
+            <Link to="/about">
               <div className={styles.containerImg}>
                 <img src={profileIcon} alt="icon-about" />
               </div>
-              <span> about</span>
-            </a>
+              <span>About</span>
+            </Link>
           </li>
           <li className={styles.navElement}>
-            <a href="href">
+            <Link to="/resume">
               <div className={styles.containerImg}>
                 <img src={resumeIcon} alt="icon-resume" />
               </div>
-              <span> resume</span>
-            </a>
+              <span>Resume</span>
+            </Link>
           </li>
           <li className={styles.navElement}>
-            <a href="href">
+            <Link to="/works">
               <div className={styles.containerImg}>
                 <img src={portfolioIcon} alt="icon-works"/>
               </div>
-              <span> works</span>
-            </a>
+              <span>Works</span>
+            </Link>
           </li>
           <li className={styles.navElement}>
-            <a href="href">
+            <Link to="/contact">
               <div className={styles.containerImg}>
-                <img src={contantIcon} alt="icon-contact" />
+                <img src={contacttIcon} alt="icon-contact" />
               </div>
-              <span> contact</span>
-            </a>
+              <span>Contact</span>
+            </Link>
           </li>
         </ul>
       </nav>
