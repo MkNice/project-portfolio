@@ -89,8 +89,12 @@
   flex-direction: column;
   width: 70%;
   height: 35px;
+  height: auto;
+  word-wrap: break-word;
 }
-
+.contactItemContent span {
+  text-transform: lowercase;
+}
 .contactItemContent span:first-child {
   font-size: 12px;
   color: #878787;

@@ -43,7 +43,7 @@ const Sidebar = () => {
             </div>
             <div className={styles.contactItemContent}>
               <span>email</span>
-              <span>Example@Mail.Com</span>
+              <span>Anastasia.mihailova123@gmail.com</span>
             </div>
           </div>
           <div className={styles.contactItem}>

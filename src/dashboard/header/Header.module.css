@@ -6,6 +6,7 @@
 .navigationContainer {
   display: flex;
   justify-content: flex-end;
+  user-select: none;
 }
 
 .navElements,

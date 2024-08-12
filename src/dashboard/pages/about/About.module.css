@@ -44,6 +44,7 @@
   box-sizing: border-box;
   transition: transform 0.3s;
   text-align: center;
+  word-break: break-word;
 }
 
 .service:nth-child(3n+1){
@@ -78,4 +79,15 @@
   font-size: 1em;
   color: #777;
   line-height: 1.6;
+}
+
+@media (max-width: 1000px) {
+  .services {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .service{
+    width: 80%;
+  }
 }
