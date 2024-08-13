@@ -1,0 +1,135 @@
+.containerHeader {
+  position: relative;
+}
+
+.containerHeader h1 {
+  font-weight: 900;
+  display: inline-block;
+  font-size: 2em;
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.contentHeader {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 0;
+  transform: translateY(30px);
+}
+
+.contentHeader img {
+  width: 30px;
+  height: 30px;
+}
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+}
+
+.line {
+  display: inline-block;
+  width: 15vw;
+  height: 3px;
+  background: linear-gradient(to right, #ff007f, #ff77a9);
+  position: absolute;
+  margin-left: 30px;
+  top: 50%;
+}
+
+.contentItem {
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.contentItem h3 {
+  font-size: 1.2em;
+  font-weight: 600;
+  width: 100%;
+  margin: 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-height: 1.2em;
+  transition: all 0.5s ease-in-out;
+}
+
+.contentItem:hover h3 {
+  white-space: normal;
+  max-height: 10em;
+}
+
+.contentItem p {
+  font-size: 1em;
+  color: #777;
+  line-height: 1.6;
+}
+
+.contentContainer:first-child .contentItem:nth-child(2n) {
+  background-color: #6691ff9f;
+}
+.contentContainer:first-child .contentItem:nth-child(2n + 1) {
+  background-color: #ffc4c4;
+}
+.contentContainer:last-child .contentItem:nth-child(2n) {
+  background-color: #ffc4c4;
+}
+.contentContainer:last-child .contentItem:nth-child(2n + 1) {
+  background-color: #6691ff9f;
+}
+
+.contentItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 5px 5px #f07373;
+}
+
+.contentSkillHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.skillProgressContainer {
+  width: 100%;
+  background-color: #fff;
+  height: 5px;
+  border-radius: 20px;
+}
+.skillProgress {
+  width: 85%;
+  height: 100%;
+  background-color: #f07373;
+}
+
+.knowledgeItem {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1vw;
+}
+.knowledgeItem h3 {
+  background-color: #dfdfdfa3;
+  border-radius: 30px;
+  width: fit-content;
+  text-align: center;
+  padding: 15px 2.5vh;
+  font-size: 15px;
+  margin: 0;
+}
+
+@media (max-width: 1000px) {
+  .content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentItem {
+    width: 80%;
+  }
+}

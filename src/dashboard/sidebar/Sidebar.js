@@ -2,19 +2,26 @@ import React from 'react';
 import styles from './Sidebar.module.css';
 import profileAvatar from '../../assets/ava.jpg';
 import linkedinIcon from '../../assets/social_media/linkedin.svg';
-import twitterIcon from '../../assets/social_media/twitter.svg';
+import github from '../../assets/social_media/github.svg'
 import phoneIcon from '../../assets/personal_info/smartphone.svg';
 import emailIcon from '../../assets/personal_info/email.svg';
 import locationIcon from '../../assets/personal_info/location.svg';
 import calendarIcon from '../../assets/personal_info/calendar.svg';
+import cv from '../../assets/CV/cv.pdf';
 
 const Sidebar = () => {
   return (
     <section className={styles.sidebar}>
       <div className={styles.profile}>
-        <img className={styles.profileAvatar} src={profileAvatar} alt="Profile" />
+        <img
+          className={styles.profileAvatar}
+          src={profileAvatar}
+          alt="Profile"
+        />
         <h2>monalisa ashley</h2>
-        <p><span className={styles.upperCase}>ui/ux</span> designer</p>
+        <p>
+          <span className={styles.upperCase}>ui/ux</span> designer
+        </p>
         <div className={styles.socialMedia}>
           <div className={styles.socialMediaItem}>
             <a href="href">
@@ -23,7 +30,7 @@ const Sidebar = () => {
           </div>
           <div className={styles.socialMediaItem}>
             <a href="href">
-              <img src={twitterIcon} alt="GIT" />
+              <img src={github} alt="GIT" />
             </a>
           </div>
         </div>
@@ -65,7 +72,9 @@ const Sidebar = () => {
             </div>
           </div>
         </div>
-        <button className={styles.btn}>Download CV</button>
+        <a href={cv} download>
+          <button className={styles.btn}>Download CV</button>
+        </a>
       </div>
     </section>
   );
